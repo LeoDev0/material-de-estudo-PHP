@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  background-color: lightgrey;
+  height: 500px;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center; /* alinha verticalmente */
+  align-items: flex-start; /* alinha horizontalmente */
+  align-content: flex-end;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.div10 {
+  order: 1; /* as outras divs por padrão estão com "order: 0" */
+  align-self: flex-start; /* alinha horizontalmente apenas esse elemento */
+}
+
+.div14 {
+  /* order: -1; */
+  align-self: flex-start;
+}
